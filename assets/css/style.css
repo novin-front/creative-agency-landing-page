@@ -1,0 +1,155 @@
+@font-face {
+    font-family: iransans;
+    src: url('../fonts/iransans/IRANSansWeb.eot');
+    src: url('../fonts/iransans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iransans/IRANSansWeb.woff2') format('woff2'),
+        url('../fonts/iransans/IRANSansWeb.woff') format('woff'),
+        url('../fonts/iransans/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    font-family: iransans;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    direction: rtl;
+    position: relative;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    
+}
+@media only screen and (max-width:520px) {
+    
+}
+
+/* mobile and tablet */
+@media only screen and (max-width:768px) {
+    
+}
+/* Large devices (tablet, 769px and up) */
+@media only screen and (min-width: 769px) {
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+   
+}
+
+@media only screen and (min-width: 1400px) {
+   
+}

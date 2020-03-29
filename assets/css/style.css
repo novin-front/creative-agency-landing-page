@@ -250,6 +250,7 @@ h6,
     background: #651ed8;
     position: relative;
     margin-top: -5px;
+    padding-bottom: 6.8em;
 }
 .wrapper-service-itme {
     margin: 0 auto;
@@ -263,6 +264,10 @@ h6,
     align-items: center;
     padding: 2em;
     margin: .5em 0;
+  -webkit-box-shadow: 0px 31px 32px -26px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 31px 32px -26px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 31px 32px -26px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
 }
 .box-service-title {
     font-size: 1.1rem;
@@ -274,6 +279,57 @@ h6,
     font-size: .9rem;
     text-align: center;
     padding-bottom: 1em;
+}
+.heading-service {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    padding-bottom: 1em;
+}
+.title-creativ {
+    font-size: 1.3rem;
+    justify-content: right;
+    line-height: 30px;
+    color: #fff;
+}
+.text-creativ {
+    font-size: 1rem;
+    color: #e9e8eb;
+    margin: 1rem 0;
+}
+.heading-progress {
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+}
+.heading-progress h5.tile {
+    font-size: 1.1rem;
+}
+.progress-custom {
+    display: -ms-flexbox;
+    display: flex;
+    height: .6rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.progress-bar-custom{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ffbd04;
+    transition: width .6s ease;
+}
+.progress-wrpper {
+    margin-bottom: 1.7em;
 }
 @media screen and (max-width:450px) {
     
@@ -313,6 +369,9 @@ h6,
     }
     .box-service{
         margin: 15px;
+    }
+    .transform-t-15{
+        transform: translateY(-15%);
     }
 }
 /* Large devices (tablet, 769px and up) */

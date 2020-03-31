@@ -414,9 +414,124 @@ h6,
 /******* count up section *********/
 .count-up-section{
     width: 100%;
-    height: 500px;
     position: relative;
     background-color: #651ed8;
+    /* overflow-x: hidden; */
+}
+.contener-app {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-25%);
+}
+.title-app {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #fff;
+}
+.app-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-image {
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    -webkit-box-shadow: 0px -2px 9px -1px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px -2px 9px -1px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px -2px 9px -1px rgba(0, 0, 0, 0.52);
+}
+.sub-tile-app {
+    font-size: .8rem;
+    color: #fff;
+    margin-top: .5rem;
+}
+.count-up-wrapper {
+    background: #fff;
+    width: 100%;
+}
+.count-up-icon {
+    width: 80px;
+}
+.counter {
+    font-size: 1.6rem;
+    margin: .5em;
+    font-weight: 700;
+}
+.border-b-r {
+    border-left: 1px solid #dadada;
+}
+.box-count {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 1em;
+    margin: 0 auto;
+}
+/******** team-working-section style ******/
+.team-working-section {
+    width: 100%;
+    padding: 4em 0;
+    position: relative;
+    overflow: hidden;
+}
+.team-profile-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s;
+}
+.team-profile-image:hover{
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.27);
+}
+.team-profile-image:hover .social-network{
+    right: 0;
+}
+.social-network {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    transition: all .4s;
+}
+.team-profile-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-network-link {
+    background-color: #000;
+    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    border-bottom: 1px solid #929292;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+.social-network-link:hover{
+    color: #fff;
+    background-color: #651ed8;
+}
+.team-name {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 1em;
+}
+.team-skills {
+    width: 100%;
+    font-size: .8rem;
+    text-align: center;
+    display: block;
+    padding-top: .5em;
 }
 @media screen and (max-width:450px) {
     
@@ -463,6 +578,20 @@ h6,
     }
     .transform-t-15{
         transform: translateY(-15%);
+    }
+    .contener-app {
+        width: 100%;
+        transform: translateY(-5%);
+        overflow: hidden;
+    }
+    .app-photo-box {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 1.5em;
+    }
+    .border-b-r{
+        border-left: 0;
+        border-bottom: 1px solid #dadada;
     }
 }
 /* Large devices (tablet, 769px and up) */

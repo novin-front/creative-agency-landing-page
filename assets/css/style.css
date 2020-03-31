@@ -64,6 +64,7 @@ a:not([class]) {
 img {
     max-width: 100%;
     display: block;
+    width: 100%;
 }
 
 a,
@@ -252,8 +253,56 @@ h6,
     box-shadow: none;
     color: #000;
 }
+.btn-white {
+    background-color: #fff;
+    cursor: pointer;
+    color: #651ed8;
+    transition: all .4s;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+}
+.btn-white:hover{
+    box-shadow: none;
+    background-color: #faf6ff;
+}
+.btn-Purple {
+    background-color: #651ed8;
+    cursor: pointer;
+    color: #fff;
+    transition: all .4s;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+}
+
+.btn-Purple:hover {
+    box-shadow: none;
+    background-color: #591bbd;
+}
 .mt-6{
     margin-top: 6em!important;
+}
+/****** input coustom style  *******/
+.form-control-custom {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #999999;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    /* border-radius: .25rem; */
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+textarea.form-control-custom {
+    height: auto;
+    overflow: auto;
+    resize: vertical;
 }
 /****** service section *****/
 .service-section-box {
@@ -466,6 +515,7 @@ h6,
 }
 .app-image:hover{
     transform: scale(1.09);
+    box-shadow: none;
 }
 .sub-tile-app {
     font-size: .8rem;
@@ -475,6 +525,7 @@ h6,
 .count-up-wrapper {
     background: #fff;
     width: 100%;
+    border-bottom: 1px solid #dadada;
 }
 .count-up-icon {
     width: 80px;
@@ -530,7 +581,7 @@ h6,
 
 .social-network-link {
     background-color: #000;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     width: 40px;
     height: 40px;
     border-bottom: 1px solid #929292;
@@ -556,6 +607,170 @@ h6,
     text-align: center;
     display: block;
     padding-top: .5em;
+}
+.text-Purple {
+    color: #651ed8;
+}
+.text-white {
+    color: #fff;
+}
+/* Price-plane-section style */
+.Price-plane-section {
+    width: 100%;
+    padding: 5em 0;
+    background: #eef2f6;
+    position: relative;
+}
+.table-price {
+    background-color: #fff;
+    text-align: center;
+    padding: 3em .5em;
+    border: 1px solid #e5e5e5;
+    border-left: 0;
+    margin: 2em 0;
+}
+.table-price.active{
+    transform: scaleY(1.1);
+    background-color: #651ed8;
+    border-color: #651ed8;
+}
+.table-price.active .table-price-h4,
+.table-price.active li.table-itme,
+.table-price.active .price-package{
+    color: #fff;
+}
+.table-price.active .table-pric-btn {
+    background-color: #fff;
+    color: #651ed8;
+}
+.table-price.active li.table-itme{
+    border-color: #5b1bc2;
+}
+.table-price-h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 2em;
+}
+
+.price-package {
+    color: #651ed8;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 1.6em;
+}
+
+ul.table-price-list {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+li.table-itme {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1em;
+    font-size: .9rem;
+    color: #666666;
+}
+li.table-itme:last-child {
+    border-bottom: 0;
+}
+.table-pric-btn {
+    background: #651ed8;
+    padding: .65rem 3rem;
+    color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.39);
+    transition: all .4s;
+}
+.table-pric-btn:hover{
+    box-shadow: none;
+    color: #fff;
+    background-color: #5c1bc5;
+}
+/* contact-us-section style */
+.contact-us-section {
+    width: 100%;
+    position: relative;
+    padding: 4em 0;
+    background-color: #651ed8;
+}
+/****** footer style *********/
+.footer{
+    width: 100%;
+    background-color: #e1e1e1;
+    position: relative;
+    padding: 3em 0;
+    padding-bottom: 1.7em;
+}
+.footer-image-logo {
+    display: flex;
+    justify-content: center;
+}
+.footer-social-network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.6em;
+}
+.social-link-f {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #651ed8;
+    color: #fff;
+    border-radius: 50%;
+    margin: 6px;
+    transition: all .5s;
+}
+.social-link-f:hover {
+    transform: rotate(360deg);
+    background: #fff;
+    color: #651ed8;
+}
+.box-footer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 1.7em;
+}
+.box-footer-text {
+    font-size: .9em;
+    color: #6e6e6e;
+}
+.input-group-append {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    overflow: hidden;
+}
+input.form-control{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+ul.menu-footer {
+    padding: 1em 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.copy-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link-footer-tag {
+    color: #666666;
+    padding: 0 1em;
+    font-size: .9rem;
+}
+.copy-right,
+.copy-right a {
+    color: #666666;
+    font-size: .9rem;
 }
 @media screen and (max-width:450px) {
     
@@ -621,13 +836,31 @@ h6,
     .service-section-box {
         padding-bottom: 0;
     }
+    .contact-us-section{
+        padding: 2em 0;
+        margin-top: -5px;
+    }
+    .copy-right{
+        display: inline-block;
+        text-align: center;
+    }
+    .box-footer {
+        margin: 2em 0;
+    }
 }
 /* Large devices (tablet, 769px and up) */
 @media only screen and (min-width: 769px) {
     
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .Price-plane-section .col-md-3 {
+        padding: 0;
+    }
+    .mt-md-6 {
+        margin-top: 6em !important;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

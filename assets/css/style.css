@@ -243,7 +243,9 @@ h6,
     box-shadow: none;
     color: #000;
 }
-
+.mt-6{
+    margin-top: 6em!important;
+}
 /****** service section *****/
 .service-section-box {
     width: 100%;
@@ -331,13 +333,102 @@ h6,
 .progress-wrpper {
     margin-bottom: 1.7em;
 }
+/****** testimonial wrapper style ******/
+.testimonial-wrapper{
+    width: 100%;
+    padding: 6em 0;
+    background-image: url("../image/world-map.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.wrapper-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.sub-heading {
+    text-align: center;
+    padding: .6em 0;
+    font-size: .9rem;
+    color: #575757;
+}
+.image-box-test {
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2em auto;
+    transition: all .4;
+}
+.testimonial-content {
+    text-align: center;
+    font-size: .9rem;
+    color: #424242;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+.testimonial-box-auther {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.testimonial-box-name {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    padding-top: .8em;
+}
+.testimonial-box-name span {
+    font-size: .8rem;
+    margin-top: .5em;
+}
+.testimonial-box-name::before {
+    content: "";
+    width: 20%;
+    height: 2px;
+    background: #cacaca;
+    position: absolute;
+    top: 0;
+}
+.slick-list.draggable .slick-active .image-box-test{
+    transform: scale(1.4)
+}
+.slick-slide {
+    margin: 0 20px;
+}
+.screen-shot-btn {
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 90%;
+}
+.btn-right-aw{
+    right: -10%;
+}
+.btn-left-aw{
+    left: -10%;
+}
+/******* count up section *********/
+.count-up-section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #651ed8;
+}
 @media screen and (max-width:450px) {
     
 }
 @media only screen and (max-width:520px) {
-    /* .header-shape{
-        height: 3em;
-    } */
+    .btn-right-aw {
+        right: 0;
+    }
+
+    .btn-left-aw {
+        left: 0;
+    }
 }
 
 /* mobile and tablet */

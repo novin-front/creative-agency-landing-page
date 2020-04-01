@@ -28,9 +28,11 @@
          top = $(window).scrollTop();
      });
      $("#menu-list-btn").click(function () {
+         $(".mobile-blur-bg").fadeIn(100);
          $(".mobile-menu").fadeIn(300);
      })
      $(".menu-close-btn").click(function () {
+         $(".mobile-blur-bg").fadeOut(100);
          $(".mobile-menu").fadeOut(300);
      })
 

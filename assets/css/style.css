@@ -387,6 +387,12 @@ textarea.form-control-custom {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(4px);
 }
+.dot-bg-img {
+    max-width: 350px;
+    position: absolute;
+    bottom: -15%;
+    right: -3%;
+}
 .menu-heading {
     padding: .6em;
     display: flex;
@@ -701,6 +707,7 @@ a.mobile-link {
     background: #fff;
     width: 100%;
     border-bottom: 1px solid #dadada;
+    position: relative;
 }
 
 .count-up-icon {
@@ -956,6 +963,9 @@ p.box-contact-p {
     position: relative;
     padding: 3em 0;
     padding-bottom: 1.7em;
+    -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.48);
 }
 
 .footer-image-logo {
@@ -1153,23 +1163,42 @@ ul.menu-footer {
     .link-footer-tag {
         padding: 0 5px;
     }
+    .dot-bg-img {
+        top: -30px;
+        right: -6%;
+    }
 }
 
 /* Large devices (tablet, 769px and up) */
-@media only screen and (min-width: 769px) {}
+@media only screen and (min-width: 768px) {
+    .Price-plane-section .col-md-6 {
+        padding: 0;
+    }
+    .wrapper-service-itme {
+        transform: translateY(-26%);
+    }
+    .box-service {
+        margin: 10px auto;
+        width: 100%;
+        text-align: center;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .Price-plane-section .col-md-3 {
-        padding: 0;
-    }
-
     .mt-md-6 {
         margin-top: 6em !important;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+        .Price-plane-section .col-lg-3 {
+            padding: 0;
+        }
+        .wrapper-service-itme {
+            transform: translateY(-20%);
+        }
+}
 
 @media only screen and (min-width: 1400px) {}
